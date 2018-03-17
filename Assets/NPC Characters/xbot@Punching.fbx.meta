@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 61df4021ae218ea4fbceaa6d1dcf84d0
-timeCreated: 1520254986
+guid: 87fcaef7ca5e3e442b9e3505fb869c1a
+timeCreated: 1521297305
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Alpha_Joints
-    100002: Alpha_Surface
+    100000: Beta_Joints
+    100002: Beta_Surface
     100004: mixamorig:Head
     100006: mixamorig:HeadTop_End
     100008: mixamorig:Hips
@@ -75,8 +75,8 @@ ModelImporter:
     100134: mixamorig:Spine1
     100136: mixamorig:Spine2
     100138: //RootNode
-    400000: Alpha_Joints
-    400002: Alpha_Surface
+    400000: Beta_Joints
+    400002: Beta_Surface
     400004: mixamorig:Head
     400006: mixamorig:HeadTop_End
     400008: mixamorig:Hips
@@ -145,23 +145,23 @@ ModelImporter:
     400134: mixamorig:Spine1
     400136: mixamorig:Spine2
     400138: //RootNode
-    4300000: Alpha_Surface
-    4300002: Alpha_Joints
-    7400000: Walking
+    4300000: Beta_Joints
+    4300002: Beta_Surface
+    7400000: Punching
     9500000: //RootNode
-    13700000: Alpha_Joints
-    13700002: Alpha_Surface
+    13700000: Beta_Joints
+    13700002: Beta_Surface
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Alpha_Body_MAT
-    second: {fileID: 2100000, guid: e26894bd8dcfb4f49b1b1dcc7aa7dccb, type: 2}
+      name: Beta_Joints_MAT
+    second: {fileID: 2100000, guid: 75b6f09b396106542a74bca47ec64318, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Alpha_Joints_MAT
-    second: {fileID: 2100000, guid: 5b9e62f3b1b4bbc4ebb1ad60fae847ed, type: 2}
+      name: asdf1_Beta_HighLimbsGeoSG2
+    second: {fileID: 2100000, guid: fe910848d38a7c345ae50ad15040cc41, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -189,10 +189,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Walking
+      name: Punching
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 26
+      lastFrame: 36
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
