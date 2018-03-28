@@ -2120,6 +2120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   head: {fileID: 4828672963253554}
+  distanceToPlayer: 3
 --- !u!137 &137034523150491474
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
