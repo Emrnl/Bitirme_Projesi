@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemySightScript : MonoBehaviour {
 
-	//public Vector3 position = new Vector3(1000f,1000f,1000f);
-	//public Vector3 resetPosition = new Vector3 (1000f,1000f,1000f);
+	public Vector3 position = new Vector3(1000f,1000f,1000f);
+	public Vector3 resetPosition = new Vector3 (1000f,1000f,1000f);
 
 	public float fieldOfViewAngle = 110f;
 	public bool playerInSight;
@@ -19,7 +19,13 @@ public class EnemySightScript : MonoBehaviour {
 	public GameObject player;
 	public Animator playerAnim;
 	public Vector3 previousSighting;
+	public Vector3 playerLastSeenPos;
+	public bool playerFound = false;
 
+	void Update()
+	{
+		
+	}
 
 	void Awake()
 	{
@@ -49,9 +55,16 @@ public class EnemySightScript : MonoBehaviour {
 				if (Physics.Raycast (transform.position + transform.up, direction.normalized, out hit, col.radius)) 
 				{
 					playerInSight = true;
+					playerLastSeenPos = player.transform.position;
+					playerFound = true;
 				}
 			}
 		}
+	}
+
+	void ForgotChasing()
+	{
+		playerLastSeenPos = new Vector3 (0f, 0f, 0f);
 	}
 
 }
