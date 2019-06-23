@@ -1,1 +1,1 @@
-# Bitirme_Projesi
+# Proje
